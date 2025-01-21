@@ -47,8 +47,7 @@
       <main class="content">
         <h1>#1 Jasa Perizinan Usaha Terbaik dan Terpercaya di Indonesia</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quos.
+          Kami siap membantu Anda mengurus segala jenis perizinan usaha, mulai dari PT, CV, hingga PMA. Dengan layanan yang cepat, profesional, dan terjamin, bisnis Anda bisa berjalan dengan legalitas yang kuat.
         </p>
         <a href="#contact" class="contact-btn">Hubungi Kami</a>
       </main>
@@ -67,12 +66,9 @@
         <div class="content">
           <h3>Kenapa harus kami?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
+
+
+            Kami memiliki segudang pengalaman di bidang Jasa Perizinan Usaha untuk membantu Anda mencapai tujuan bisnis Anda dengan lebih cepat dan mudah, tidak hanya menawarkan solusi tapi juga kualitas
           </p>
         </div>
       </div>
@@ -83,13 +79,8 @@
         <div class="content">
           <h3>Kenapa harus kami?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
+            Kami telah membantu ribuan bisnis dari berbagai sektor dalam mengurus legalitas dan perizinan usaha, menjadikan kami mitra terpercaya           </p>
+          
         </div>
       </div>
       <div class="row">
@@ -99,13 +90,8 @@
         <div class="content">
           <h3>Kenapa harus kami?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
+            Dengan tim ahli dan sistem yang terintegrasi, kami memastikan proses pengurusan izin Anda selesai tepat waktu tanpa kerumitan           </p>
+          
         </div>
       </div>
       <div class="row">
@@ -115,13 +101,8 @@
         <div class="content">
           <h3>Kenapa harus kami?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
+            Dari pendirian PT, CV, PMA hingga pengurusan NIB dan SIUP, kami menawarkan solusi legalitas usaha yang lengkap dalam satu pintu           </p>
+          
         </div>
       </div>
       <!-- about section end -->
@@ -130,8 +111,7 @@
       <section id="contact" class="contact">
         <h2><span>Kontak</span> Kami</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-          accusamus.
+         Jangan segan-segan untuk segera menghubungi kami untuk informasi lebih lanjut.
         </p>
         <div class="row">
           <iframe
@@ -264,6 +244,36 @@
         </div>
       </section>
       <!-- comparison section end -->
+
+      <!-- cost calculator section start -->
+      <section class="cost-calculator">
+        <h2><span>Kalkulator</span> Biaya</h2>
+        <div class="calculator-container">
+          <div class="calculator-form">
+            <select id="serviceType">
+              <option value="">Pilih Jenis Layanan</option>
+              <option value="pt">Pendirian PT</option>
+              <option value="cv">Pendirian CV</option>
+              <option value="siup">Pembuatan SIUP</option>
+              <option value="nib">Pembuatan NIB</option>
+            </select>
+            <select id="businessScale">
+              <option value="">Skala Usaha</option>
+              <option value="micro">Mikro</option>
+              <option value="small">Kecil</option>
+              <option value="medium">Menengah</option>
+              <option value="large">Besar</option>
+            </select>
+            <button onclick="calculateCost()" class="calc-btn">Hitung Estimasi</button>
+          </div>
+          <div id="costResult" class="cost-result">
+            <h3>Estimasi Biaya:</h3>
+            <div class="price">Rp. <span id="estimatedCost">0</span></div>
+            <p class="note">*Harga dapat berubah sesuai kompleksitas</p>
+          </div>
+        </div>
+      </section>
+      <!-- cost calculator section end -->
 
       <!-- footer section start -->
       <footer>
@@ -428,6 +438,9 @@
         feather.replace();
       </script>
 
+      <script src="config.js"></script>
+      <script src="server.js"></script>
+
       <!-- Tambahkan script ini sebelum closing body tag -->
       <script>
         // Toggle class active untuk hamburger menu
@@ -479,14 +492,15 @@
         </button>
       </div>
 
-      <script>
+     
+<script>
         // WhatsApp Button Toggle
         const waToggle = document.querySelector(".wa-toggle");
         const waPopup = document.querySelector(".wa-popup");
 
         // Panggil feather.replace() setelah menambahkan icon
         feather.replace();
-
+        
         waToggle.addEventListener("click", () => {
           waPopup.classList.toggle("active");
         });
@@ -508,5 +522,5 @@
           window.open(url, "_blank");
         }
       </script>
-    </body>
-  </html>
+
+      <!-- Tambahkan sebelum whatsapp button -->
